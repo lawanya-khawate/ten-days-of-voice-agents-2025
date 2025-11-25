@@ -159,3 +159,14 @@
     }
   }
 }
+body {
+  background: #199e67;
+  font-family: "Inter", sans-serif;
+}
+
+/* Make layout nicer on wider screens */
+@media (min-width: 800px) {
+  .welcome-container {
+    padding-top: 60px;
+  }
+}
