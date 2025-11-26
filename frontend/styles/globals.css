@@ -5,71 +5,93 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+
+  /* AMAZON THEME COLORS */
+  --background: #F7F7F7; /* Amazon light gray */
+  --foreground: #111827; /* Amazon dark text */
+  --card: #FFFFFF;
+  --card-foreground: #111827;
+  --popover: #FFFFFF;
+  --popover-foreground: #111827;
+
+  --primary: #FF9900; /* Amazon Yellow */
+  --primary-foreground: #111827;
+
+  --secondary: #146EB4; /* Amazon Blue */
+  --secondary-foreground: #FFFFFF;
+
+  --muted: #E5E7EB;
+  --muted-foreground: #6B7280;
+
+  --accent: #FF9900;
+  --accent-foreground: #111827;
+
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+
+  --border: #D1D5DB; /* Soft Amazon border gray */
+  --input: #D1D5DB;
+  --ring: #FF9900; /* Amazon ring color */
+
+  /* Updated chart colors to Amazon palette */
+  --chart-1: #146EB4;
+  --chart-2: #FF9900;
+  --chart-3: #111827;
+  --chart-4: #34D399;
+  --chart-5: #F59E0B;
+
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #111827;
+  --sidebar-primary: #FF9900;
+  --sidebar-primary-foreground: #111827;
+  --sidebar-accent: #146EB4;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #D1D5DB;
+  --sidebar-ring: #FF9900;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.269 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.371 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  /* Amazon Dark Mode */
+  --background: #111827;
+  --foreground: #F3F4F6;
+
+  --card: #1F2937;
+  --card-foreground: #F3F4F6;
+
+  --popover: #1F2937;
+  --popover-foreground: #F3F4F6;
+
+  --primary: #FF9900;
+  --primary-foreground: #111827;
+
+  --secondary: #146EB4;
+  --secondary-foreground: #FFFFFF;
+
+  --muted: #374151;
+  --muted-foreground: #9CA3AF;
+
+  --accent: #FF9900;
+  --accent-foreground: #111827;
+
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.439 0 0);
+
+  --border: #374151;
+  --input: #4B5563;
+  --ring: #FF9900;
+
+  --chart-1: #FF9900;
+  --chart-2: #146EB4;
+  --chart-3: #34D399;
+  --chart-4: #FBBF24;
+  --chart-5: #EF4444;
+
+  --sidebar: #1F2937;
+  --sidebar-foreground: #F3F4F6;
+  --sidebar-primary: #FF9900;
+  --sidebar-primary-foreground: #111827;
+  --sidebar-accent: #146EB4;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #4B5563;
+  --sidebar-ring: #FF9900;
 }
 
 @theme inline {
@@ -159,3 +181,8 @@
     }
   }
 }
+body {
+  background: #090808; /* Amazon background */
+  font-family: "Inter", sans-serif;
+}
+
