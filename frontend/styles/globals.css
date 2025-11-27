@@ -5,71 +5,94 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+
+  /* LSK BANK – NAVY SECURITY THEME COLORS */
+  --background: #0A1A2F;            /* Deep navy */
+  --foreground: #E5E7EB;            /* Light gray text */
+  --card: #102B46;                  /* Secondary navy */
+  --card-foreground: #FFFFFF;
+  --popover: #102B46;
+  --popover-foreground: #FFFFFF;
+
+  --primary: #3FA9F5;               /* Soft cyber blue accent */
+  --primary-foreground: #0A1A2F;
+
+  --secondary: #1B3A57;             /* Muted navy */
+  --secondary-foreground: #E5E7EB;
+
+  --muted: #1E293B;
+  --muted-foreground: #94A3B8;
+
+  --accent: #3FA9F5;
+  --accent-foreground: #0A1A2F;
+
+  --destructive: #EF4444;
+
+  --border: #1F3147;
+  --input: #1F3147;
+  --ring: #3FA9F5;
+
+  /* Charts for a security dashboard look */
+  --chart-1: #3FA9F5;
+  --chart-2: #1B3A57;
+  --chart-3: #34D399;
+  --chart-4: #F59E0B;
+  --chart-5: #EF4444;
+
+  /* Sidebar */
+  --sidebar: #0D2238;
+  --sidebar-foreground: #E5E7EB;
+  --sidebar-primary: #3FA9F5;
+  --sidebar-primary-foreground: #0A1A2F;
+  --sidebar-accent: #1B3A57;
+  --sidebar-accent-foreground: #E5E7EB;
+  --sidebar-border: #1F3147;
+  --sidebar-ring: #3FA9F5;
 }
 
+/* DARK MODE — slightly deeper navy tones */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.269 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.371 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: #07101D;
+  --foreground: #F3F4F6;
+
+  --card: #0D1B2D;
+  --card-foreground: #F3F4F6;
+
+  --popover: #0D1B2D;
+  --popover-foreground: #F3F4F6;
+
+  --primary: #3FA9F5;
+  --primary-foreground: #07101D;
+
+  --secondary: #1A2F49;
+  --secondary-foreground: #F3F4F6;
+
+  --muted: #0F1A2A;
+  --muted-foreground: #94A3B8;
+
+  --accent: #3FA9F5;
+  --accent-foreground: #07101D;
+
+  --destructive: #EF4444;
+
+  --border: #142233;
+  --input: #1C2D44;
+  --ring: #3FA9F5;
+
+  --chart-1: #3FA9F5;
+  --chart-2: #1A2F49;
+  --chart-3: #34D399;
+  --chart-4: #F59E0B;
+  --chart-5: #EF4444;
+
+  --sidebar: #0A1625;
+  --sidebar-foreground: #F3F4F6;
+  --sidebar-primary: #3FA9F5;
+  --sidebar-primary-foreground: #07101D;
+  --sidebar-accent: #1A2F49;
+  --sidebar-accent-foreground: #F3F4F6;
+  --sidebar-border: #142233;
+  --sidebar-ring: #3FA9F5;
 }
 
 @theme inline {
@@ -157,5 +180,17 @@
     100% {
       background-position: 250% 0;
     }
+  }
+}
+
+/* Override final body background */
+body {
+  background: #0A1A2F; /* Deep navy */
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 800px) {
+  .welcome-container {
+    padding-top: 60px;
   }
 }
