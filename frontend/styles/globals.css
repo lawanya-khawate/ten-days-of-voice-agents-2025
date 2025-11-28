@@ -1,84 +1,119 @@
+/* --- GLOBAL.CSS (2025 Trendy Soft UI Revision — Version A) --- */
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
+/* -------------------------------------------------------------
+   🎨 2025 SOFT UI THEME — PASTEL + SOFT SHADOW + GLASS EFFECT
+   ------------------------------------------------------------- */
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --radius: 1rem;
+
+  /* 🌈 Soft Pastel Base Colors */
+  --background: #FAF8FF; /* Soft lavender-white */
+  --foreground: #2A2A2A; /* Smooth charcoal */
+
+  --card: rgba(255, 255, 255, 0.75); /* Frosted soft card */
+  --card-foreground: #2A2A2A;
+
+  --popover: rgba(255, 255, 255, 0.85);
+  --popover-foreground: #2A2A2A;
+
+  /* 🌸 Primary Accent — Peach Gradient */
+  --primary: #F7A8A8; /* Warm pastel peach */
+  --primary-foreground: #2A2A2A;
+
+  /* 💜 Secondary — Soft Lavender */
+  --secondary: #E2D9FF;
+  --secondary-foreground: #2A2A2A;
+
+  /* Muted neutrals */
+  --muted: #EDECF2;
+  --muted-foreground: #6C6C6C;
+
+  /* Accent — Light mint */
+  --accent: #C7F3E3;
+  --accent-foreground: #2A2A2A;
+
+  --destructive: #FF6B6B;
+
+  /* Borders + Inputs */
+  --border: #E1E0E8;
+  --input: #E1E0E8;
+  --ring: #F7C1C1;
+
+  /* Soft aesthetic charts */
+  --chart-1: #F7A8A8;
+  --chart-2: #C7F3E3;
+  --chart-3: #FFDFAF;
+  --chart-4: #E2D9FF;
+  --chart-5: #FF6B6B;
+
+  /* Sidebar — glass effect */
+  --sidebar: rgba(255, 255, 255, 0.5);
+  --sidebar-foreground: #2A2A2A;
+  --sidebar-primary: #F7A8A8;
+  --sidebar-primary-foreground: #2A2A2A;
+  --sidebar-accent: #E2D9FF;
+  --sidebar-accent-foreground: #2A2A2A;
+  --sidebar-border: rgba(0,0,0,0.05);
+  --sidebar-ring: #F7A8A8;
 }
 
+/* -------------------------------------------------------------
+   🌙 Dark Mode — Soft Dark + Pastel Glow
+   ------------------------------------------------------------- */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.269 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.371 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: #1C1B22;
+  --foreground: #ECECEC;
+
+  --card: rgba(40, 40, 48, 0.6);
+  --card-foreground: #ECECEC;
+
+  --popover: rgba(40, 40, 48, 0.8);
+  --popover-foreground: #ECECEC;
+
+  --primary: #F7A8A8;
+  --primary-foreground: #1C1B22;
+
+  --secondary: #362F4B;
+  --secondary-foreground: #ECECEC;
+
+  --muted: #2B2A33;
+  --muted-foreground: #A5A5A5;
+
+  --accent: #C7F3E3;
+  --accent-foreground: #1C1B22;
+
+  --destructive: #FF6B6B;
+
+  --border: rgba(255,255,255,0.08);
+  --input: rgba(255,255,255,0.08);
+  --ring: #F7C1C1;
+
+  --chart-1: #F7A8A8;
+  --chart-2: #C7F3E3;
+  --chart-3: #FFDFAF;
+  --chart-4: #E2D9FF;
+  --chart-5: #FF6B6B;
+
+  --sidebar: rgba(28, 27, 34, 0.6);
+  --sidebar-foreground: #ECECEC;
+  --sidebar-primary: #F7A8A8;
+  --sidebar-primary-foreground: #1C1B22;
+  --sidebar-accent: #362F4B;
+  --sidebar-accent-foreground: #ECECEC;
+  --sidebar-border: rgba(255,255,255,0.05);
+  --sidebar-ring: #F7A8A8;
 }
 
+/* -------------------------------------------------------------
+   🖌 Tailwind Theme Bridge
+   ------------------------------------------------------------- */
 @theme inline {
-  --font-sans:
-    var(--font-public-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-mono:
-    var(--font-commit-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+  --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-commit-mono), ui-monospace, SFMono-Regular;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -113,49 +148,49 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* -------------------------------------------------------------
+   🧊 Base Styles — Soft Shadows & Clean Look
+   ------------------------------------------------------------- */
 @layer base {
   * {
-    @apply border-foreground/20 outline-ring/50;
+    @apply border-border outline-ring/40;
   }
   body {
     @apply bg-background text-foreground;
+    background: linear-gradient(135deg, #FFF7FA, #F3EEFF, #F0FBF6);
+    font-family: "Inter", sans-serif;
   }
 }
 
+/* -------------------------------------------------------------
+   ✨ Utility: Shimmer Text
+   ------------------------------------------------------------- */
 @layer utils {
   .animate-text-shimmer {
     animation-delay: 0.5s;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-name: text-shimmer;
-    background: var(--muted-foreground)
-      gradient(
-        linear,
-        100% 0,
-        0 0,
-        from(var(--muted-foreground)),
-        color-stop(0.5, var(--secondary-foreground)),
-        to(var(--muted-foreground))
-      );
-    background: var(--muted-foreground) -webkit-gradient(
-        linear,
-        100% 0,
-        0 0,
-        from(var(--muted-foreground)),
-        color-stop(0.5, var(--secondary-foreground)),
-        to(var(--muted-foreground))
-      );
-    background-repeat: no-repeat;
+    background: linear-gradient(
+      90deg,
+      var(--muted-foreground),
+      var(--primary),
+      var(--muted-foreground)
+    );
     background-size: 50% 200%;
     display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   @keyframes text-shimmer {
-    0% {
-      background-position: -100% 0;
-    }
-    100% {
-      background-position: 250% 0;
-    }
+    0% { background-position: -100% 0; }
+    100% { background-position: 250% 0; }
+  }
+}
+
+@media (min-width: 800px) {
+  .welcome-container {
+    padding-top: 60px;
   }
 }
